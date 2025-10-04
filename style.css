@@ -1,0 +1,113 @@
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background: #f4f6f8;
+  color: #222;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.controls input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #d0d6dc;
+  min-width: 160px;
+}
+
+.controls button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #1f6feb;
+  color: white;
+}
+
+.controls button:disabled {
+  opacity: .6;
+  cursor: default;
+}
+
+.controls .danger {
+  background: #e55353;
+}
+
+#stats {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+  gap: 12px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(20,30,50,0.06);
+  overflow: hidden;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(20,30,50,0.08);
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+.card .body {
+  padding: 10px 12px;
+}
+
+.card h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.card p {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: #555;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.small {
+  font-size: 13px;
+}
+
+.btn-sm {
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #eee;
+}
